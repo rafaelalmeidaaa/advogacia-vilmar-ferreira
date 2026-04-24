@@ -164,9 +164,12 @@
     <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b border-[#b89a5a]/30 bg-[#0d0d0d] h-[80px] flex items-center">
         <div class="max-w-7xl mx-auto px-6 md:px-12 w-full flex justify-between items-center">
             <!-- Logo -->
-            <a href="#" class="flex flex-col group">
-                <span class="font-serif text-[22px] leading-tight text-white group-hover:text-gold transition-colors">Vilmar Ferreira Costa</span>
-                <span class="font-sans text-[10px] uppercase tracking-[0.2em] text-[#999999]">Advogado</span>
+            <a href="#" class="flex items-center gap-3 group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#b89a5a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="h-10 w-auto"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h18"/></svg>
+                <div class="flex flex-col">
+                    <span class="font-serif text-[18px] leading-tight text-white group-hover:text-gold transition-colors">Vilmar Ferreira Costa</span>
+                    <span class="font-sans text-[8px] uppercase tracking-[0.2em] text-[#999999]">Advogado</span>
+                </div>
             </a>
 
             <!-- Desktop Menu -->
@@ -200,27 +203,29 @@
     </div>
 
     <!-- SEÇÃO 1 — HERO -->
-    <section class="relative h-screen min-h-[600px] flex items-center overflow-hidden bg-[#0a0a0a]">
+    <section class="relative h-auto md:h-screen min-h-[500px] md:min-h-[600px] flex items-start pt-[100px] md:pt-0 md:items-center overflow-hidden bg-[#0a0a0a] pb-20 md:pb-0">
         <!-- Partículas Background -->
         <canvas id="particles-canvas"></canvas>
 
         <div class="relative z-10 w-full px-6 md:px-[10%]">
             <div class="max-w-3xl reveal">
-                <div class="w-12 h-px bg-gold mb-10"></div>
+                <div class="mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#b89a5a" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="text-gold"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h18"/></svg>
+                </div>
                 <h1 class="font-serif text-4xl md:text-[64px] leading-tight mb-8 text-white">
                     Vilmar Ferreira Costa Advogado
                 </h1>
                 <p class="text-gray-light text-lg md:text-[20px] mb-12 max-w-xl leading-relaxed">
                     Comprometidos com a justiça. Dedicados à defesa integral dos seus direitos com ética e excelência.
                 </p>
-                <div class="flex flex-wrap gap-4">
+                <div class="flex flex-col sm:flex-row gap-4">
                     <a href="https://wa.me/5516988308292?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." 
                        target="_blank" 
-                       class="inline-block border border-gold px-10 py-5 text-[13px] tracking-[0.15em] font-bold text-gold hover:bg-gold hover:text-black-pure transition-all duration-300">
+                       class="inline-block w-full sm:w-auto text-center border border-gold px-10 py-5 text-[13px] tracking-[0.15em] font-bold text-gold hover:bg-gold hover:text-black-pure transition-all duration-300">
                         FALE CONOSCO
                     </a>
                     <a href="#areas" 
-                       class="inline-block border border-gold px-10 py-5 text-[13px] tracking-[0.15em] font-bold text-gold hover:bg-gold hover:text-black-pure transition-all duration-300">
+                       class="inline-block w-full sm:w-auto text-center border border-gold px-10 py-5 text-[13px] tracking-[0.15em] font-bold text-gold hover:bg-gold hover:text-black-pure transition-all duration-300">
                         VER SERVIÇOS
                     </a>
                 </div>
@@ -231,16 +236,17 @@
 
 
     <!-- SEÇÃO 2 — SOBRE -->
-    <section id="sobre" class="bg-[#111111] py-24 md:py-[120px] px-6 md:px-[10%]">
+    <section id="sobre" class="bg-[#111111] py-12 md:py-[120px] px-6 md:px-[10%]">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
             <!-- Foto Coluna -->
             <div class="w-full md:w-1/2 reveal">
-                <div class="relative aspect-[4/5] bg-[#0d0d0d] border border-white/5 flex items-center justify-center overflow-hidden shadow-2xl">
-                    <img src="./dr-vilmar.jpg" 
+                <div class="relative aspect-[4/5] bg-[#0d0d0d] border border-white/5 flex items-center justify-center overflow-hidden shadow-2xl h-full min-h-[500px]">
+                    <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80&w=800" 
                          alt="Dr. Vilmar Ferreira Costa" 
-                         class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                         class="w-full h-full object-cover grayscale brightness-90 filter transition-all duration-700"
+                         style="filter: grayscale(100%);"
                          referrerPolicy="no-referrer">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#111111]/80 via-transparent to-transparent opacity-60"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#111111]/90 via-transparent to-transparent opacity-80"></div>
                     <div class="absolute top-8 left-8 w-20 h-20 border-t border-l border-gold/40"></div>
                     <div class="absolute bottom-8 right-8 w-20 h-20 border-b border-r border-gold/40"></div>
                 </div>
@@ -256,10 +262,7 @@
                         <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                         <span class="text-gold text-[12px] uppercase tracking-[0.1em]">OAB/SP 117.867</span>
                     </div>
-                    <div class="flex items-center space-x-3">
-                        <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        <span class="text-gray-light text-[12px] lowercase tracking-wide">vilmar.ferreiracosta@gmail.com</span>
-                    </div>
+
                 </div>
 
                 <p class="text-gray-light leading-relaxed mb-10 text-lg">
@@ -511,20 +514,24 @@
         const canvas = document.getElementById('particles-canvas');
         const ctx = canvas.getContext('2d');
         let particles = [];
+
+        function isMobile() { return window.innerWidth < 768; }
+
         function resize() { 
             if (canvas && canvas.parentElement) {
                 canvas.width = canvas.parentElement.offsetWidth; 
                 canvas.height = canvas.parentElement.offsetHeight; 
             }
         }
+
         class Particle {
             constructor() { this.init(); }
             init() {
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2 + 0.5;
-                this.speedY = Math.random() * 0.4 + 0.1;
-                this.opacity = Math.random() * 0.5 + 0.1;
+                this.size = Math.random() * 1.5 + 0.5;
+                this.speedY = isMobile() ? Math.random() * 0.2 + 0.05 : Math.random() * 0.4 + 0.1;
+                this.opacity = Math.random() * 0.4 + 0.1;
             }
             update() {
                 this.y -= this.speedY;
@@ -535,13 +542,35 @@
                 ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill();
             }
         }
-        function create() { particles = []; for (let i = 0; i < 70; i++) particles.push(new Particle()); }
+
+        function create() {
+            particles = [];
+            const count = isMobile() ? 30 : 70;
+            for (let i = 0; i < count; i++) particles.push(new Particle());
+        }
+
+        let animFrame;
         function animate() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             particles.forEach(p => { p.update(); p.draw(); });
-            requestAnimationFrame(animate);
+            animFrame = requestAnimationFrame(animate);
         }
-        window.onresize = () => { resize(); create(); };
+
+        // Pausa partículas quando fora da tela (economia de CPU)
+        const heroSection = canvas.parentElement;
+        const visObs = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (!animFrame) animate();
+                } else {
+                    cancelAnimationFrame(animFrame);
+                    animFrame = null;
+                }
+            });
+        });
+        visObs.observe(heroSection);
+
+        window.addEventListener('resize', () => { resize(); create(); });
         resize(); create(); animate();
 
         // Intersection Observer for Reveal
